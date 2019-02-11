@@ -113,7 +113,7 @@ public class ApiEngine {
         String res = "&okhttp&&android&" + android.os.Build.VERSION.RELEASE + "&V" +
                 AppUtils.getVersionName(BaseApp.getContext());
         if (needHost) {
-            res = "laigewan.com" + res;
+            res = "shen.com" + res;
         }
         return res;
     }
