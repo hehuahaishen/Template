@@ -30,14 +30,10 @@ public class Test1Activity extends MVPActivity<Test1PresenterImpl> implements Te
     }
 
     @Override
-    protected void initData() {
+    protected void initDataEvent() {
 
     }
 
-    @Override
-    protected void initEvent() {
-
-    }
 
     @Override
     public void showVersion(String s) {
