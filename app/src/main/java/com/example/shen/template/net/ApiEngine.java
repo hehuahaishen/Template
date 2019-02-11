@@ -1,8 +1,8 @@
 package com.example.shen.template.net;
 
-import com.example.app.BuildConfig;
 import com.example.common.app.BaseApp;
 import com.example.common.util.AppUtils;
+import com.example.shen.template.BuildConfig;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.io.IOException;

@@ -1,8 +1,8 @@
 package com.example.shen.template.mvpbase;
 
-import com.example.app.R;
 import com.example.common.util.L;
 import com.example.common.util.ResUtil;
+import com.example.shen.template.R;
 import com.example.shen.template.bean.BaseWebBean;
 import com.example.shen.template.config.Constant;
 import com.google.gson.JsonSyntaxException;

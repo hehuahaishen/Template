@@ -1,15 +1,10 @@
 package com.example.shen.template;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
-import com.example.app.R;
 import com.example.shen.template.module.test1.mvp.Test1Activity;
 import com.example.shen.template.mvpbase.BaseActivity;
 
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
