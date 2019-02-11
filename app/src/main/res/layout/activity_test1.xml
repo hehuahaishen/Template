@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_message_Test1Activity"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_custom_toast"
+        android:textSize="8dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_loading_Test1Activity"
+        android:layout_marginTop="20dp"
+        style="@style/item"
+        android:text="加载数据" />
+
+</LinearLayout>
