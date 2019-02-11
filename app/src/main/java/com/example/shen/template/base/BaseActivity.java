@@ -1,4 +1,4 @@
-package com.example.shen.template.mvpbase;
+package com.example.shen.template.base;
 
 import android.app.ActivityManager;
 import android.content.ComponentName;
@@ -43,8 +43,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         unbinder = ButterKnife.bind(this);
 
         init();
-        initData();
-        initEvent();
+        initDataEvent();
     }
 
 
@@ -53,9 +52,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void init() {
     }
 
-    protected abstract void initData();
-
-    protected abstract void initEvent();
+    protected abstract void initDataEvent();
 
     /** 增大音量 */
     protected void setAudioEnlarge() {}

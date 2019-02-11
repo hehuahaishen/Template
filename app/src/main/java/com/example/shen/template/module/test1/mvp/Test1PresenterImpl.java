@@ -1,6 +1,6 @@
 package com.example.shen.template.module.test1.mvp;
 
-import com.example.shen.template.mvpbase.BaseObserverTemp;
+import com.example.shen.template.mvpbase.BaseObjectObserver;
 import com.example.shen.template.mvpbase.BasePresenter;
 
 import java.io.IOException;
@@ -23,7 +23,7 @@ public class Test1PresenterImpl extends BasePresenter<Test1View, Test1ModelImpl>
 
 
     public void versionUpdated(){
-        mModel.versionUpdated(new BaseObserverTemp<ResponseBody>(this, mvpView, true, "加载中...") {
+        mModel.versionUpdated(new BaseObjectObserver<ResponseBody>(this, mvpView, true, "加载中...") {
             @Override
             protected void onSuccess(ResponseBody data) {
                 try {

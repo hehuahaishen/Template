@@ -3,7 +3,7 @@ package com.example.shen.template;
 import android.content.Intent;
 import android.view.View;
 import com.example.shen.template.module.test1.mvp.Test1Activity;
-import com.example.shen.template.mvpbase.BaseActivity;
+import com.example.shen.template.base.BaseActivity;
 
 import butterknife.OnClick;
 

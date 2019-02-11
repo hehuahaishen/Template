@@ -47,11 +47,11 @@ public abstract class BaseModel {
      * @param observable
      * @param observer
      */
-    public static void universal(Observable observable, BaseObserverTemp observer) {
+    public static void universal(Observable observable, BaseObjectObserver observer) {
         universal(observable, observer, true);
     }
 
-    public static void universal(Observable observable, BaseObserverTemp observer, boolean isDelay) {
+    public static void universal(Observable observable, BaseObjectObserver observer, boolean isDelay) {
         Observable obser = observable;
         if (isDelay) {
             obser = observable.delay(delayTime, TimeUnit.MILLISECONDS);

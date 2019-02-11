@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.example.common.util.LoadingDialogUtils;
+import com.example.shen.template.base.BaseFragment;
 
 /**
  * Created by Administrator on 2017/9/21.

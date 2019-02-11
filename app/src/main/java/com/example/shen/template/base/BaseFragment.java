@@ -1,4 +1,4 @@
-package com.example.shen.template.mvpbase;
+package com.example.shen.template.base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -45,16 +45,13 @@ public abstract class BaseFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         init();
-        initData();
-        initEvent();
+        initDataEvent();
     }
 
     protected void init() {
     }
 
-    protected abstract void initData();
-
-    protected abstract void initEvent();
+    protected abstract void initDataEvent();
 
     @Override
     public void onDestroyView() {

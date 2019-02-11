@@ -20,7 +20,7 @@ import retrofit2.HttpException;
  * Created by Administrator on 2017/9/21.
  *
  */
-public abstract class BaseObserverTemp<T> implements Observer {
+public abstract class BaseObjectObserver<T> implements Observer {
 
     /* 对应HTTP的状态码 */
     private static final int NOT_FOUND = 404;
@@ -36,12 +36,12 @@ public abstract class BaseObserverTemp<T> implements Observer {
 
     private String mLoadingDialogMessage = "加载中...";
 
-    public BaseObserverTemp(BasePresenter presenter, BaseView mvpView) {
+    public BaseObjectObserver(BasePresenter presenter, BaseView mvpView) {
         this(presenter, mvpView, true, "");
     }
 
-    public BaseObserverTemp(BasePresenter presenter, BaseView mvpView, boolean isShowLoading,
-                            String loadingDialogMessage) {
+    public BaseObjectObserver(BasePresenter presenter, BaseView mvpView, boolean isShowLoading,
+                              String loadingDialogMessage) {
         mPresenter = presenter;
         this.mvpView = mvpView;
         this.isShowLoading = isShowLoading;
