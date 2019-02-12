@@ -34,7 +34,7 @@ public class LoadingDialog extends AlertDialog {
 
 
     public LoadingDialog(Context context) {
-        super(context, R.style.alert_dialog_transparent);
+        super(context, R.style.alert_dialog);
     }
 
 

@@ -61,22 +61,26 @@ public class Test1Activity extends MVPActivity<Test1PresenterImpl> implements Te
             //字体工具类使用assets文件夹类的字体文件
             case R.id.one:
                 FontSetting.setFont(this, mTvMessage, "fonts/MengYuanti.ttf");
-                ToastUtils.showToast("one");
                 break;
 
             case R.id.two:
+                ToastUtils.showToast(true);
                 break;
 
             case R.id.three:
+                ToastUtils.showToast(10);
                 break;
 
             case R.id.four:
+                ToastUtils.showToast(10.22);
                 break;
 
             case R.id.five:
+                ToastUtils.showToast(-10.22);
                 break;
 
             case R.id.six:
+                ToastUtils.showToast("one");
                 break;
 
             case R.id.seven:
