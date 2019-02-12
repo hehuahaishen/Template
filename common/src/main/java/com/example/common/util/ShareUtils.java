@@ -15,7 +15,7 @@ import java.io.Serializable;
 /**
  * describe: SharedPreferences封装类
  */
-public class ShareUtil {
+public class ShareUtils {
     public static final String NAME = "config";
 
 
