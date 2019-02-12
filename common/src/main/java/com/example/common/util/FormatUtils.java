@@ -9,7 +9,7 @@ import java.text.NumberFormat;
 /**
  * Created by shen on 9/13 0013.
  */
-public class FormatUtil {
+public class FormatUtils {
 
     /**
      * 根据传递进来的 src 源数据(String)， 和截取的位数number，截取小数点<p>

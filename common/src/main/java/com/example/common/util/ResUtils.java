@@ -9,7 +9,7 @@ import com.example.common.app.BaseApp;
 /**
  * Resource -- 获取资源id   或是 获取资源的值
  */
-public class ResUtil {
+public class ResUtils {
 
 	/*-----------------------  获取资源id --------------------------*/
 	public static int getLayoutResIDByName(Context context, String name) {

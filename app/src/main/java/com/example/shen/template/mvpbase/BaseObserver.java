@@ -1,7 +1,7 @@
 package com.example.shen.template.mvpbase;
 
 import com.example.common.util.L;
-import com.example.common.util.ResUtil;
+import com.example.common.util.ResUtils;
 import com.example.shen.template.R;
 import com.example.shen.template.bean.BaseWebBean;
 import com.example.shen.template.config.Constant;
@@ -121,19 +121,19 @@ public abstract class BaseObserver<T> implements Observer<BaseWebBean<T>> {
             int code = ((HttpException) e).code();
             switch (code) {
                 case NOT_FOUND:                       /* 404 */
-                    msg = ResUtil.getString(R.string.message_not_found);
+                    msg = ResUtils.getString(R.string.message_not_found);
                     break;
 
                 case INTERNAL_SERVER_ERROR:           /* 500 */
-                    msg = ResUtil.getString(R.string.message_internal_server_error);
+                    msg = ResUtils.getString(R.string.message_internal_server_error);
                     break;
 
                 case UNSATISFIABLE_REQUEST:           /* 504 */
-                    msg = ResUtil.getString(R.string.message_unsatisfiable_request);
+                    msg = ResUtils.getString(R.string.message_unsatisfiable_request);
                     break;
 
                 case SERVICE_TEMPORARILY_UNAVAILABLE: /* 503 */
-                    msg = ResUtil.getString(R.string.message_server_error);
+                    msg = ResUtils.getString(R.string.message_server_error);
 
                 default:
                     break;
@@ -141,27 +141,27 @@ public abstract class BaseObserver<T> implements Observer<BaseWebBean<T>> {
 
         } else if (e instanceof UnknownHostException) {                 /* 没有网络 */
             // MyApp.setHasNetWork(false);
-            msg = ResUtil.getString(R.string.message_unknownhost);
+            msg = ResUtils.getString(R.string.message_unknownhost);
 
         } else if (e instanceof SocketTimeoutException) {               /* 连接超时 */
             // MyApp.setHasNetWork(false);
-            msg = ResUtil.getString(R.string.message_sockettimeout);
+            msg = ResUtils.getString(R.string.message_sockettimeout);
 
         } else if (e instanceof ConnectException) {                     /* 连接异常 */
             // MyApp.setHasNetWork(false);
-            msg = ResUtil.getString(R.string.message_connectexception);
+            msg = ResUtils.getString(R.string.message_connectexception);
 
         } else if (e instanceof ParseException) {                       /* 数据解析失败 */
-            msg = ResUtil.getString(R.string.message_data_parsing_filed);
+            msg = ResUtils.getString(R.string.message_data_parsing_filed);
 
         } else if (e instanceof JsonSyntaxException) {                  /* 数据解析失败 */
-            msg = ResUtil.getString(R.string.message_data_parsing_filed);
+            msg = ResUtils.getString(R.string.message_data_parsing_filed);
 
         } else if (e instanceof IOException) {                          /* 数据读取失败 -- IO异常 */
-            msg = ResUtil.getString(R.string.message_data_read_filed);
+            msg = ResUtils.getString(R.string.message_data_read_filed);
 
         } else {                                                        /* 未知错误 */
-            msg = ResUtil.getString(R.string.message_unknown_mistake);
+            msg = ResUtils.getString(R.string.message_unknown_mistake);
         }
 
         if (e != null) {
